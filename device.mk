@@ -27,6 +27,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/xiaomi/rock/rock-vendor.mk)
@@ -124,9 +126,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-mediatek.xml \
 	$(LOCAL_PATH)/config/permissions/privapp-permissions-whitelist-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-whitelist-system_ext.xml
 
-# Copy the kernel dtb from the prebuilts directory.
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/prebuilts/dtb.img:dtb.img
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -160,7 +159,8 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-gapps
 
 PRODUCT_PACKAGES += \
     WifiResOverlayRock \
