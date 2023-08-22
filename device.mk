@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/rock
+DEVICE_PATH := device/xiaomi/stone
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/xiaomi/rock/rock-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/stone/stone-vendor.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -163,9 +163,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-gapps
 
 PRODUCT_PACKAGES += \
-    WifiResOverlayRock \
-    SystemUIOverlayRock \
-    SettingsOverlayRock 
+    WifiResOverlayStone \
+    SystemUIOverlayStone \
+    SettingsOverlayStone
 
 
 

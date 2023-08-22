@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/rock
+DEVICE_PATH := device/xiaomi/stone
 
 # Architecture
 TARGET_ARCH := arm64
@@ -86,8 +86,8 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_rock
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_rock
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_stone
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_stone
 
 # Kernel Offset
 BOARD_KERNEL_PAGESIZE := 4096
