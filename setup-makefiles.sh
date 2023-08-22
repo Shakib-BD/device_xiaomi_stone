@@ -18,7 +18,7 @@
 
 set -e
 
-export DEVICE=rock
+export DEVICE=stone
 export VENDOR=xiaomi
 
 INITIAL_COPYRIGHT_YEAR=2021
@@ -40,7 +40,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
 # Copyright headers and guards
-write_headers "rock"
+write_headers "stone"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

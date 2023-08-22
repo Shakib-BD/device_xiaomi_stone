@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "SystemUIOverlayRock",
-    theme: "SystemUIOverlayRock",
+    name: "SettingsOverlayStone",
+    theme: "SettingsOverlayStone",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true
