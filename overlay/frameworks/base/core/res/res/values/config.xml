@@ -529,16 +529,4 @@
       <bool name="config_ui_enableFadingMarquee">true</bool>
       
         <bool name="config_automatic_brightness_available">true</bool>
-        
-            <array name="config_sfps_sensor_props">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0">
-        <item></item>     <!-- displayId -->
-        <item>1080</item> <!-- sensorLocationX -->
-        <item>910</item>  <!-- sensorLocationY -->
-        <item>100</item>  <!-- sensorRadius -->
-    </array>
-    
     </resources>
