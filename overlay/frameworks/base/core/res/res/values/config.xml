@@ -518,13 +518,7 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
     
-        <bool name="config_is_powerbutton_fps">true</bool>
-        
-    <bool name="config_powerButtonFingerprint">true</bool>
     
-<string-array name="config_biometric_sensors">
-      <item>0:2:15</item>
-    </string-array>
     
       <bool name="config_ui_enableFadingMarquee">true</bool>
       
