@@ -21,6 +21,12 @@
      NOTE: The naming convention is "config_camelCaseValue". Some legacy
      entries do not follow the convention, but all new entries should. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+      <bool name="config_is_powerbutton_fps">true</bool>
+    <bool name="config_powerButtonFingerprint">true</bool>
+<string-array name="config_biometric_sensors">
+      <item>0:2:15</item>
+    </string-array>
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">false</bool>
 
@@ -518,9 +524,13 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
     
-    
-    
-      <bool name="config_ui_enableFadingMarquee">true</bool>
+    <bool name="config_ui_enableFadingMarquee">true</bool>
       
-        <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
+      <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+ <!-- The default refresh rate -->
+    <integer name="config_defaultRefreshRate">90</integer>
+    
+      <bool name="config_enableAutoPowerModes">true</bool>     
     </resources>
