@@ -21,6 +21,12 @@
      NOTE: The naming convention is "config_camelCaseValue". Some legacy
      entries do not follow the convention, but all new entries should. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+      <bool name="config_is_powerbutton_fps">true</bool>
+    <bool name="config_powerButtonFingerprint">true</bool>
+<string-array name="config_biometric_sensors">
+      <item>0:2:15</item>
+    </string-array>
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">false</bool>
 
@@ -518,21 +524,8 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
     
-    
-    
-      <bool name="config_ui_enableFadingMarquee">true</bool>
+    <bool name="config_ui_enableFadingMarquee">true</bool>
       
-        <bool name="config_automatic_brightness_available">true</bool>
-        
-            <array name="config_sfps_sensor_props">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0">
-        <item></item>     <!-- displayId -->
-        <item>1080</item> <!-- sensorLocationX -->
-        <item>910</item>  <!-- sensorLocationY -->
-        <item>100</item>  <!-- sensorRadius -->
-    </array>
+    <bool name="config_automatic_brightness_available">true</bool>
     
     </resources>
