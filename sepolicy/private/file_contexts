@@ -12,6 +12,15 @@
 # VoLTE
 /system/bin/vtservice           u:object_r:vtservice_exec:s0
 
+# Fingerprint
+/mnt/vendor/persist/goodix(/.*)? 									u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?    									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?        									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/goodix(/.*)?        									u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?           									u:object_r:vendor_fingerprint_data_file:s0
+/data/gf_data(/.*)?              									u:object_r:fingerprint_data_file:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service                           u:object_r:hal_fingerprint_default_exec:s0
+
 # Vibrator
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/vendor\.xiaomi\.hardware\.vibratorfeature\.service u:object_r:hal_vibrator_default_exec:s0
 
