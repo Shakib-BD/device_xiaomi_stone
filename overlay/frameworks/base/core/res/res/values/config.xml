@@ -394,24 +394,10 @@
        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
-</resources>
-    <dimen name="rounded_corner_radius">106.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom">106.0px</dimen>
-    <dimen name="rounded_corner_radius_top">106.0px</dimen>
-    <dimen name="status_bar_height_default">73.0px</dimen>
-    <dimen name="status_bar_height_portrait">73.0px</dimen>
     <integer name="config_shutdownBatteryTemperature">580</integer>
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -50 V 76 H 50 V 0 H 0 Z</string>
 
-        <!-- The list of components which should be automatically disabled for a specific package. -->
-    <string-array name="config_deviceDisabledComponents" translatable="false">
-        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
-        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
-        <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
-        <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
-        <item>com.google.android.gms/com.google.android.gms.droidguard.DroidGuardService</item>
-    </string-array>
-
+      
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
          The default is false. -->
@@ -459,12 +445,21 @@
          APN types.  The set of APN types and relevant settings are specified within the telephony
          module and are non-configurable.  Whether or not data connectivity over a cellular network
          is available at all is controlled by the flag: config_moble_data_capable. -->
-    <string-array name="networkAttributes">
-        <item>wifi,1,1,2,-1,true</item>
-        <item>tedongle,49,49,1,-1,true</item>
-        <item>ethernet,9,9,0,-1,true</item>
-        <item>wifi_p2p,13,1,0,-1,true</item>
+<string-array translatable="false" name="networkAttributes">
+        <item>wifi,1,1,1,-1,true</item>
+        <item>mobile,0,0,0,-1,true</item>
+        <item>mobile_mms,2,0,4,60000,true</item>
+        <item>mobile_supl,3,0,2,60000,true</item>
+        <item>mobile_dun,4,0,2,60000,true</item>
+        <item>mobile_hipri,5,0,3,60000,true</item>
+        <item>mobile_fota,10,0,2,60000,true</item>
+        <item>mobile_ims,11,0,2,60000,true</item>
+        <item>mobile_cbs,12,0,2,60000,true</item>
+        <item>bluetooth,7,7,2,-1,true</item>
+        <item>mobile_emergency,15,0,5,-1,true</item>
+        <item>ethernet,9,9,9,-1,true</item>
     </string-array>
+
 
     <!-- This string array should be overridden by the device to present a list of radio
          attributes.  This is used by the connectivity manager to decide which networks can coexist
@@ -501,7 +496,7 @@
     <bool name="config_enableShellMainThread">true</bool>
 
     <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+    <string-array name="config_defaultPinnerServiceFiles">
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system/framework/framework.jar"</item>
@@ -509,23 +504,36 @@
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
-
-    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
-    <integer-array name="config_availableColorModes">
-        <item>0</item> <!-- COLOR_MODE_NATURAL -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
-    </integer-array>
-
-    <!-- Whether or not wcg mode should be enabled on this device -->
-    <bool name="config_enableWcgMode">true</bool>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
     
     <bool name="config_ui_enableFadingMarquee">true</bool>
       
     <bool name="config_automatic_brightness_available">true</bool>
+      <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+ <!-- The default refresh rate -->
+    <integer name="config_defaultRefreshRate">90</integer>
     
+      <bool name="config_enableAutoPowerModes">true</bool>    
+        
+       <bool name="config_carrier_volte_available">true</bool>
+
+    <!-- Flag specifying whether VoLTE TTY is supported -->
+    <bool name="config_carrier_volte_tty_supported">true</bool>
+
+    <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
+         carrier provisioning. If false: hard disabled. If true: then depends on carrier
+         provisioning, availability etc -->
+    <bool name="config_carrier_wfc_ims_available">true</bool>
+
+    <!-- Flag specifying whether VoLTE is available on device -->
+    <bool name="config_device_volte_available">true</bool>
+
+    <!-- Flag specifying whether VT is available on device -->
+    <bool name="config_device_vt_available">true</bool>
+
+    <!-- Flag specifying whether WFC over IMS is available on device -->
+    <bool name="config_device_wfc_ims_available">true</bool>
+
     </resources>
