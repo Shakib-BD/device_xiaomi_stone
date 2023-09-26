@@ -19,7 +19,7 @@ It was announced & released in September 2022.
 | Dimensions   | 163.99 x 76.09 x 8.9 mm                                    |
 | Display      | 2408 x 1080 px, 6.58 inches, 90 hz, IPS                    |
 | Rear camera  | 50MP (Primary), 2MP (Macro), 2MP (Depth)                   |
-| Front camera | 5 MPx,                                                     |
+| Front camera | 5 MPx                                                     |
 
 ## Device picture
 
