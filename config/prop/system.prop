@@ -120,3 +120,9 @@ persist.vendor.sensor.cali_sensor=111001100000000
 
 # gralloc4 log
 persist.log.tag.gralloc4=S
+
+# Havoc
+ro.havoc.device.name=Asus Zenfone Max M2 (X01AD)
+ro.havoc.group.url=https://t.me/PocoM5oprek
+ro.havoc.maintainer=Briant Audiera
+ro.havoc.maintainer.username=michionle
