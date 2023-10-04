@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_stone.mk 
+    $(LOCAL_DIR)/lineage_stone.mk 
 
 COMMON_LUNCH_CHOICES := \
-    havoc_stone-user \
-    havoc_stone-userdebug \
-    havoc_stone-eng 
+    lineage_stone-user \
+    lineage_stone-userdebug \
+    lineage_stone-eng 

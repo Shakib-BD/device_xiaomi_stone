@@ -22,7 +22,7 @@ TARGET_CORE_GMS := true
 ## Device identifier. This must come after all inclusions
 HAVOC_BUILD_TYPE := Unofficial
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := havoc_stone
+PRODUCT_NAME := lineage_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
