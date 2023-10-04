@@ -15,6 +15,8 @@ $(call inherit-product, device/xiaomi/stone/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
+MAINTAINER := BriantAudiera
+
 # Google - GMS
 WITH_GMS := true
 TARGET_CORE_GMS := true
