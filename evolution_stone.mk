@@ -11,18 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common Havoc stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common EvoX stuff
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+
+# EvolutionX Stuff
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_USES_PICO_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-
-MAINTAINER := BriantAudiera
-
-# Google - GMS
-WITH_GMS := true
-TARGET_CORE_GMS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true 
+TARGET_SUPPORTS_GOOGLE_RECORDER := true 
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_USES_MIUI_CAMERA := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier. This must come after all inclusions
-HAVOC_BUILD_TYPE := Unofficial
 PRODUCT_DEVICE := stone
 PRODUCT_NAME := lineage_stone
 PRODUCT_BRAND := POCO
