@@ -27,7 +27,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := lineage_stone
+PRODUCT_NAME := evolution_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
