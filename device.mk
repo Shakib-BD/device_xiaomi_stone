@@ -93,11 +93,6 @@ PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
 
-
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-MT6789
-
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
