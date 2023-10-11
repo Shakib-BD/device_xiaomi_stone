@@ -17,7 +17,7 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-	<string name="config_defaultAutofillService">com.google.android.gms/.autofill.service.AutofillService</string>
+    	<string name="config_defaultAutofillService">com.google.android.gms/.autofill.service.AutofillService</string>
 	<string name="config_defaultAccessibilityService">com.google.android.marvin.talkback/.TalkBackService</string>
 	<string name="config_persistentDataPackageName">com.google.android.gms</string>
 	<string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>	
