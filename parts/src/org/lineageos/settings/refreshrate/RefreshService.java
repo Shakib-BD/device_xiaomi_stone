@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.refreshrate;
+package org.pixelexperience.settings.refreshrate;
 
 import android.app.ActivityManager;
 import android.app.ActivityTaskManager;

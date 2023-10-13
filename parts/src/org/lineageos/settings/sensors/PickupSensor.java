@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.sensors;
+package org.pixelexperience.settings.sensors;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -25,7 +25,7 @@ import android.hardware.SensorManager;
 import android.os.SystemClock;
 import android.util.Log;
 
-import org.lineageos.settings.doze.DozeUtils;
+import org.pixelexperience.settings.doze.DozeUtils;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.speaker;
+package org.pixelexperience.settings.speaker;
 
 import android.os.Bundle;
 import android.view.MenuItem;
