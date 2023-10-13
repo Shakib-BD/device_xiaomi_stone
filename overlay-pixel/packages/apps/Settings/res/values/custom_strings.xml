@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+                   2017-2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="pex_maintainer">Maintainer</string>
+    <string name="pex_maintainer_name" translatable="false">Briant Audiera</string>
+    <string name="pex_maintainer_group" translatable="false">https://youtu.be/Xu1wA7CfhQg?si=rvjtG3tP3pLGPRkY</string>
+</resources>
