@@ -5,6 +5,6 @@
 	<string name="config_persistentDataPackageName">com.google.android.gms</string>
 	<string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
 	<string-array name="config_packagesExemptFromSuspension" translatable="false">
-		<item>com.google.android.apps.wellbeing</item>
+		<item></item>
 	</string-array>
 </resources>
