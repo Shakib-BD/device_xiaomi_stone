@@ -185,10 +185,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
 
-#DT2W
-PRODUCT_PACKAGES += \
-    DT2WServiceStone
-    
+
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \
