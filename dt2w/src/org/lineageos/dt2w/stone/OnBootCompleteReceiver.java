@@ -1,4 +1,4 @@
-package org.lineageos.dt2w.stone;
+package org.lineageos.dt2w.mt6789;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
