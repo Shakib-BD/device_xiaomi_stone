@@ -1,0 +1,5 @@
+on property:persist.sys.stone.dt2w=0
+    exec /system/bin/sendevent /dev/input/event4 0 1 4
+
+on property:persist.sys.stone.dt2w=1
+    exec /system/bin/sendevent /dev/input/event4 0 1 5
