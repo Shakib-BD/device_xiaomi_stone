@@ -15,7 +15,7 @@ ro.vendor.cabc.enable=true
 ro.surface_flinger.supports_background_blur=1
 
 # Disable blur on app launch
-ro.launcher.blur.appLaunch=1
+ro.launcher.blur.appLaunch=0
 
 # RIL
 # 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
