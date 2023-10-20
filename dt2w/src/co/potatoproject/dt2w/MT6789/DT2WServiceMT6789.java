@@ -51,7 +51,7 @@ public class DT2WServiceMT6789 extends Service {
         }
 
         void update() {
-            int dt2wValue = Secure.getInt(mContext.getContentResolver(), Secure.DOUBLE_TAP_TO_WAKE, 0);
+            int dt2wValue = Secure.getInt(mContext.getContentResolver(), Secure.DOUBLE_TAP_TO_WAKE, 1);
             boolean dt2wEnabled = dt2wValue == 1;
             SystemProperties.set("persist.sys.MT6789.dt2w", dt2wEnabled ? "1" : "0");
         }

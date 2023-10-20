@@ -18,6 +18,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Google - GMS
 WITH_GMS := true
 TARGET_CORE_GMS := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_ENABLE_BLUR := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
@@ -30,4 +32,5 @@ BUILD_FINGERPRINT :=POCO/stone_p_global/stone:13/TP1A.220624.014/V14.0.8.0.TLUMI
 PRIVATE_BUILD_DESC="stone_p_global-user 13 TP1A.220624.014 V14.0.8.0.TLUMIXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-RISING_MAINTAINER := "Rafi_x"
+RISING_MAINTAINER := "Briant Audiera"
+RISING_CHIPSET := "HELIO G99"
