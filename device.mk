@@ -162,6 +162,9 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayStone \
     SettingsOverlayStone
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-MT6789
 
 
 # Rootdir
