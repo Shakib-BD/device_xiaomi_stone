@@ -92,14 +92,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-     <item>40</item>
-     <item>70</item>
-     <item>250</item>
-     <item>700</item>
-     <item>900</item>
-     <item>1300</item>
-     <item>1700</item>
-     <item>2200</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
@@ -109,14 +109,14 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>40</item>
-        <item>70</item>
-        <item>250</item>
-        <item>700</item>
-        <item>900</item>
-        <item>1300</item>
-        <item>1700</item>
-        <item>2200</item>
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
     </integer-array>
 
     <!-- Array of ambient lux threshold values. This is used for determining hysteresis constraint
@@ -130,17 +130,12 @@
          level[n] <= value < level[n+1]  n+1
          level[MAX] <= value             MAX+1 -->
     <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
         <item>10</item>
-        <item>50</item>
+        <item>30</item>
         <item>100</item>
-        <item>500</item>
-        <item>750</item>
-        <item>1000</item>
-        <item>1500</item>
+        <item>800</item>
         <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
         <item>4000</item>
     </integer-array>
 
@@ -155,7 +150,7 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
-     <integer-array name="config_autoBrightnessDisplayValuesNits">
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
         <item>3</item>
         <item>4</item>
         <item>6</item>
@@ -168,10 +163,18 @@
         <item>87</item>
         <item>97</item>
         <item>98</item>
+        <item>98</item>
+        <item>98</item>
+        <item>99</item>
         <item>99</item>
         <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>101</item>
         <item>101</item>
         <item>102</item>
+        <item>103</item>
+        <item>103</item>
         <item>103</item>
         <item>106</item>
         <item>108</item>
@@ -227,10 +230,18 @@
         <item>445</item>
         <item>496</item>
         <item>501</item>
+        <item>501</item>
+        <item>501</item>
+        <item>507</item>
         <item>507</item>
         <item>512</item>
+        <item>512</item>
+        <item>512</item>
+        <item>517</item>
         <item>517</item>
         <item>522</item>
+        <item>527</item>
+        <item>527</item>
         <item>527</item>
         <item>542</item>
         <item>553</item>
@@ -260,6 +271,12 @@
         <item>1535</item>
         <item>1638</item>
         <item>1714</item>
+        <item>2047</item>
+        <item>2047</item>
+        <item>2047</item>
+        <item>2047</item>
+        <item>2047</item>
+        <item>2047</item>
         <item>2047</item>
     </integer-array>
 
@@ -380,6 +397,8 @@
     <integer name="config_shutdownBatteryTemperature">580</integer>
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -50 V 76 H 50 V 0 H 0 Z</string>
 
+      
+   
     <!-- The device supports freeform window management. Windows have title bars and can be moved
          and resized. If you set this to true, you also need to add
          PackageManager.FEATURE_FREEFORM_WINDOW_MANAGEMENT feature to your device specification.
