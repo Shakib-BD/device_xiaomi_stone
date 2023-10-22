@@ -30,7 +30,4 @@
 
 # Sysbta
 /system/bin/hw/android\.hardware\.bluetooth\.audio-service-system u:object_r:hal_audio_sysbta_exec:s0
-
-
-/system/bin/dt2w_event                  u:object_r:dt2w_event_exec:s0
  
