@@ -4,3 +4,4 @@ init.svc.emdlogger1 u:object_r:system_mtk_init_svc_emdlogger1_prop:s0
 persist.vendor.mtk_rcs_single_reg_support u:object_r:system_mtk_rcs_single_reg_support_prop:s0
 ro.vendor.mtk_cta_set u:object_r:system_mtk_cta_set_prop:s0
 persist.vendor.accelerate.charge        u:object_r:exported_system_prop:s0  
+persist.sys.mt6789.dt2w u:object_w:system_file:s0
