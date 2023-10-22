@@ -126,10 +126,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-mediatek.xml \
 	$(LOCAL_PATH)/config/permissions/privapp-permissions-whitelist-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-whitelist-system_ext.xml
 
-#DT2W-EVENT
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/dt2w/dt2w_event:$(TARGET_COPY_OUT_SYSTEM)/bin/dt2w_event
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
