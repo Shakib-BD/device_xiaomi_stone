@@ -116,8 +116,12 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     libhidltransport
 
-# IMS
+# Keymaster
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
+    vendor.mediatek.hardware.keymaster_attestation@1.1-service
 
+# IMS
 PRODUCT_PACKAGES += \
     libshim_vtservice
 

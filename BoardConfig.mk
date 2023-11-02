@@ -50,6 +50,9 @@ AB_OTA_PARTITIONS += \
 # Assertation
 TARGET_OTA_ASSERT_DEVICE := ROCK,STONE
 
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
