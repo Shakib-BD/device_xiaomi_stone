@@ -21,3 +21,9 @@ media.VTS.HiDL                                          u:object_r:vtservice_hid
 
 # Audio AIDL interface
 android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/sysbta    u:object_r:hal_audio_service:s0
+
+# Keystore
+android.system.keystore2.IKeystoreService/default                              u:object_r:keystore_service:s0
+android.security.remoteprovisioning                                            u:object_r:remoteprovisioning_service:s0
+android.security.remoteprovisioning.IRemotelyProvisionedKeyPool                u:object_r:remotelyprovisionedkeypool_service:s0
+android.service.gatekeeper.IGateKeeperService                                  u:object_r:gatekeeper_service:s0
