@@ -123,7 +123,10 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    libshim_vtservice
+    libshim_vtservice \
+    vendor.mediatek.hardware.mtkradioex@1.0 \
+    vendor.mediatek.hardware.mtkradioex@3.0 \
+	vendor.mediatek.hardware.videotelephony@1.0 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
