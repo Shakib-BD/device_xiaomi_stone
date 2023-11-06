@@ -119,7 +119,9 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-service
+    vendor.mediatek.hardware.keymaster_attestation@1.1-service \
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0-impl:64 
 
 # IMS
 PRODUCT_PACKAGES += \

@@ -11,7 +11,25 @@
         vendor_framework_compatibility_matrix.xml
         vendor_framework_compatibility_matrix.xml
 -->
-<compatibility-matrix version="4.0" type="framework">
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.keymaster</name>
+        <version>3.0</version>
+        <version>4.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.keymaster</name>
+        <version>4.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>strongbox</instance>
+        </interface>
+    </hal>
+
     <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
         <version>1.2</version>
@@ -453,7 +471,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.mtkradioex</name>
-        <version>2.5</version>
+        <version>3.0</version>
         <interface>
             <name>IMtkRadioEx</name>
             <instance>imsSlot1</instance>

@@ -27,6 +27,7 @@ android.system.keystore2.IKeystoreService/default                              u
 android.security.remoteprovisioning                                            u:object_r:remoteprovisioning_service:s0
 android.security.remoteprovisioning.IRemotelyProvisionedKeyPool                u:object_r:remotelyprovisionedkeypool_service:s0
 android.service.gatekeeper.IGateKeeperService                                  u:object_r:gatekeeper_service:s0
+android.hardware.keymaster::IKeymasterDevice                                   u:object_r:hal_keymaster_hwservice:s0
 
 # Ims
 vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot1           u:object_r:hal_radio_service:s0
@@ -61,3 +62,5 @@ vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot1             u:objec
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot2             u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot3             u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot4             u:object_r:hal_radio_service:s0
+android.hardware.radio.modem.IRadioModem/imsSlot1                        u:object_r:hal_radio_service:s0
+android.hardware.radio.modem.IRadioModem/imsSlot2                        u:object_r:hal_radio_service:s0
