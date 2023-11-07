@@ -176,7 +176,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 BOARD_VNDK_VERSION := current
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+        $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml \
+        $(DEVICE_PATH)/framework_compatibility_matrix.xml
+        
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Permissive 
