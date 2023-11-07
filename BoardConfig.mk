@@ -178,3 +178,6 @@ BOARD_VNDK_VERSION := current
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+# Permissive 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
