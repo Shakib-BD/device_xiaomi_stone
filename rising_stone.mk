@@ -15,9 +15,12 @@ $(call inherit-product, device/xiaomi/stone/device.mk)
 $(call inherit-product, vendor/rising/config/rising.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Google - GMS
+# Google - GMS & Pixel Feature
 WITH_GMS := true
 TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_PREBUILT_PIXEL_LAUNCHER := false
+TARGET_ENABLE_PIXEL_FEATURES := false
 RISING_PACKAGE_TYPE := "CORE"
 TARGET_ENABLE_BLUR := false
 
