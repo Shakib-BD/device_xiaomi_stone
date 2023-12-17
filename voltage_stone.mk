@@ -12,21 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
 # Inherit some common Rising stuff
-$(call inherit-product, vendor/rising/config/rising.mk)
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Google - GMS & Pixel Feature
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_CORE_GMS_EXTRAS := false
-TARGET_PREBUILT_PIXEL_LAUNCHER := false
-TARGET_ENABLE_PIXEL_FEATURES := false
-RISING_PACKAGE_TYPE := "CORE"
-TARGET_ENABLE_BLUR := false
+# Build Type
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := rising_stone
+PRODUCT_NAME := voltage_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
@@ -35,5 +29,3 @@ BUILD_FINGERPRINT :=POCO/stone_p_id/stone:13/TP1A.220624.014/V14.0.5.0.TLUIDXM:u
 PRIVATE_BUILD_DESC="stone_p_global-user 13 TP1A.220624.014 V14.0.5.0.TLUIDXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-RISING_MAINTAINER := "BriantAudiera"
-RISING_CHIPSET := "MT6789"

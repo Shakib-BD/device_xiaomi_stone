@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_stone.mk 
+    $(LOCAL_DIR)/voltage_stone.mk 
     
 COMMON_LUNCH_CHOICES := \
-    rising_stone-user \
-    rising_stone-userdebug \
-    rising_stone-eng 
+    voltage_stone-user \
+    voltage_stone-userdebug \
+    voltage_stone-eng 
