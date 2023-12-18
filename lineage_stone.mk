@@ -15,47 +15,23 @@ $(call inherit-product, device/xiaomi/stone/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# AlphaDroid Build Type & Maintainer stuff.
-ALPHA_MAINTAINER := Shakib | شَکِیْب 
-ALPHA_BUILD_TYPE := UNOFFICIAL
-
-# Gapps Build Details.
-# WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := false
-
-#Gapps custom
-TARGET_INCLUDE_GOOGLE_APP := false
-TARGET_INCLUDE_GOOGLE_CALCULATOR := true
-TARGET_INCLUDE_GOOGLE_CALENDAR := false
-TARGET_INCLUDE_GOOGLE_CHROME := false
-TARGET_INCLUDE_GOOGLE_DESKCLOCK := true
-TARGET_INCLUDE_GOOGLE_DRIVE := false
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := false
-TARGET_INCLUDE_GOOGLE_SETUP := false
-TARGET_INCLUDE_PIXEL_FRAMEWORK := false
-
-# Debugging Flags
-TARGET_INCLUDE_MATLOG := false
-TARGET_DEFAULT_ADB_ENABLED := false
-
-# Another stuff
+# Device config
 TARGET_HAS_UDFPS := false
 TARGET_ENABLE_BLUR := false
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_DISABLE_EPPE := true
 
-# Pixel customization
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := false
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := false
+# GAPPS config
+WITH_GAPPS := false
+
+# Use Google Telephony pack (Dialer, Contacts, Messaging) on GAPPS builds
+# Default = true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
+# Debugging
+# Default = false
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := true
 
 PRODUCT_DEVICE := stone
 PRODUCT_NAME := lineage_stone
