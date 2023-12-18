@@ -1,3 +1,4 @@
+GNU nano 6.2                         BoardConfig.mk
 #
 # Copyright (C) 2019 Potato Open Sauce Project
 # Copyright (C) 2020 The LineageOS Project
@@ -50,6 +51,9 @@ AB_OTA_PARTITIONS += \
 # Assertation
 TARGET_OTA_ASSERT_DEVICE := ROCK,STONE
 
+# Keystore
+TARGET_PROVIDES_KEYMASTER := true
+
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
@@ -99,6 +103,7 @@ BOARD_HEADER_SIZE := 2128
 BOARD_BOOT_HEADER_VERSION := 4
 
 # Kernel prebuilt option
+TARGET_FORCE_PREBUILT_KERNEL := true
 BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/prebuilts/boot.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
@@ -107,8 +112,6 @@ TARGET_NO_KERNEL := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-
-
 
 # Kernel mkbootimg args
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -122,7 +125,7 @@ BOARD_METADATAIMAGE_PARTITION_SIZE := 33554432
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_PARTITION_SIZE := 136314880
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 115234275328
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608 
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
 # Partitions Option
@@ -138,9 +141,9 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system_ext product vendor syst
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 
-BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST))
+BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LI>
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4))
-$(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+$(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $>
 
 # Platform
 BOARD_VENDOR := xiaomi
@@ -173,4 +176,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 BOARD_VNDK_VERSION := current
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+        $(DEVICE_PATH)/config/vintf/compatibility_matrix.device.xml \
+        $(DEVICE_PATH)/config/vintf/framework_compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+# Permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
