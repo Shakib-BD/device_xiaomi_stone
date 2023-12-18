@@ -1,4 +1,3 @@
-GNU nano 6.2                         BoardConfig.mk
 #
 # Copyright (C) 2019 Potato Open Sauce Project
 # Copyright (C) 2020 The LineageOS Project
@@ -141,9 +140,9 @@ BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system_ext product vendor syst
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
 
-BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LI>
+BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4))
-$(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $>
+$(foreach p, $(BOARD_PARTITION_LIST), $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 # Platform
 BOARD_VENDOR := xiaomi
