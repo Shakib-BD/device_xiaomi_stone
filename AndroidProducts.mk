@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The droidxOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_stone.mk
+    $(LOCAL_DIR)/droidx_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_stone-user \
-    lineage_stone-userdebug \
-    lineage_stone-eng
+    droidx_stone-user \
+    droidx_stone-userdebug \
+    droidx_stone-eng
