@@ -2,6 +2,6 @@
        <dimen name="rounded_corner_radius">106.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">106.0px</dimen>
     <dimen name="rounded_corner_radius_top">106.0px</dimen>
-    <dimen name="status_bar_height_default">73.0px</dimen>
-    <dimen name="status_bar_height_portrait">73.0px</dimen>
+    <dimen name="status_bar_height_default">78.0px</dimen>
+    <dimen name="status_bar_height_portrait">78.0px</dimen>
     </resources>
