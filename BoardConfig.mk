@@ -187,3 +187,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Permissive 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
