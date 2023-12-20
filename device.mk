@@ -189,8 +189,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
 
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
-    
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \
