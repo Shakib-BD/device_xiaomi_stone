@@ -124,3 +124,11 @@ ro.droidx.maintainer=Shakib | شَکِیْب
 ro.min.fling_velocity=160 
 ro.max.fling_velocity=20000
 ro.max.fling_velocity=20000
+
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=false
