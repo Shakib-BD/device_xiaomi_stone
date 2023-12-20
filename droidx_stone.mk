@@ -18,9 +18,6 @@ $(call inherit-product, vendor/droidx/config/common.mk)
 # DROIDX_GAPPS := false
 DROIDX_GAPPS := true
 
-# Maintainer Flag
-ro.droidx.maintainer=Shakib
-
 # droidxOS
 DROIDX_BUILD_TYPE := UNOFFICIAL
 
