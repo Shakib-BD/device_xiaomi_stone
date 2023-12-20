@@ -13,10 +13,10 @@ $(call inherit-product, device/xiaomi/stone/device.mk)
 
 # Inherit some common AlphaDroid stuff
 $(call inherit-product, vendor/droidx/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps/Vanilla Flag
-DROIDX_GAPPS := CoreGapps
+# DROIDX_GAPPS := false
+DROIDX_GAPPS := true
 
 # Maintainer Flag
 ro.droidx.maintainer=Shakib
