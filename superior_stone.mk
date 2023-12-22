@@ -11,30 +11,37 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common AlphaDroid stuff
-$(call inherit-product, vendor/droidx/config/common.mk)
+# Inherit some common SuperiorOS stuff
+$(call inherit-product, vendor/superior/config/common.mk)
 
-# Gapps/Vanilla Flag
-# DROIDX_GAPPS := false
-DROIDX_GAPPS := true
+# Maintainer Flag (one word only/no spacing)
+MAINTAINER := SHAKIB(@David_Nill)
 
-# droidxOS
-DROIDX_BUILD_TYPE := UNOFFICIAL
+# GAPPS build flag, if not defined build type is vanilla
+SUPERIOR_GAPPS = core
 
-# Bootanimation
+# Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# disable/enable blur support, default is false
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Disable/Enable Blur Support, default is false
 TARGET_ENABLE_BLUR := false
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Officialify 
+SUPERIOR_OFFICIAL := false
 
-## Quick tap feature
+# Superior Prebuilts
+USE_QUICKPIC := false
+USE_DUCKDUCKGO := false
+USE_MOTO_CALCULATOR := true
+
+# Quick Tap Feature
 TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := droidx_stone
+PRODUCT_NAME := superior_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi

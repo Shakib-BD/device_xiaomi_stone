@@ -117,9 +117,6 @@ persist.vendor.sensor.cali_sensor=111001100000000
 # gralloc4 log
 persist.log.tag.gralloc4=S
 
-# DroidX Maintainer Stirng
-ro.droidx.maintainer=Shakib | شَکِیْب
-
 # Fling
 ro.min.fling_velocity=160 
 ro.max.fling_velocity=20000

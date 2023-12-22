@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The droidxOS Project
+# Copyright (C) 2020 The superiorOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_stone.mk
+    $(LOCAL_DIR)/superior_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_stone-user \
-    droidx_stone-userdebug \
-    droidx_stone-eng
+    superior_stone-user \
+    superior_stone-userdebug \
+    superior_stone-eng
