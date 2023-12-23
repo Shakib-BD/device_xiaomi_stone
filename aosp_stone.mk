@@ -11,37 +11,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common SuperiorOS stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common ProjectElixir stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Maintainer Flag (one word only/no spacing)
-MAINTAINER := SHAKIB(@David_Nill)
-
-# GAPPS build flag, if not defined build type is vanilla
-SUPERIOR_GAPPS = core
-
-# Bootanimation Resolution
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Charging Animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-# Disable/Enable Blur Support, default is false
-TARGET_ENABLE_BLUR := false
-
-# Officialify 
-SUPERIOR_OFFICIAL := false
-
-# Superior Prebuilts
-USE_QUICKPIC := false
-USE_DUCKDUCKGO := false
-USE_MOTO_CALCULATOR := true
-
-# Quick Tap Feature
+# Project-Elixir Official Stuff
+IS_PHONE := true
+ELIXIR_BUILD_TYPE := UNOFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_BUILD_APERTURE_CAMERA := true
+BUILD_USERNAME := Shakib
+BUILD_HOSTNAME := Elixir
 
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := superior_stone
+PRODUCT_NAME := aosp_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi

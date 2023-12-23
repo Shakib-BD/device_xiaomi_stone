@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The superiorOS Project
+# Copyright (C) 2020 The aospOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_stone.mk
+    $(LOCAL_DIR)/aosp_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_stone-user \
-    superior_stone-userdebug \
-    superior_stone-eng
+    aosp_stone-user \
+    aosp_stone-userdebug \
+    aosp_stone-eng
