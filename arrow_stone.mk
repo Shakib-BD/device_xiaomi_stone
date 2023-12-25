@@ -11,28 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common ProjectElixir stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-# Bootanimation
+# Bootanimation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Project-Elixir Official Stuff
-IS_PHONE := true
-ELIXIR_BUILD_TYPE := UNOFFICIAL
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_STOCK_ACORE := false
+# ArrowOS Maintainer
+DEVICE_MAINTAINER := 𝕊𝕙𝕒𝕜𝕚𝕓 🦄
+
+# Pixel Charger
 TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_BUILD_APERTURE_CAMERA := true
-BUILD_USERNAME := Shakib
-BUILD_HOSTNAME := Elixir
 
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := aosp_stone
+PRODUCT_NAME := arrow_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
