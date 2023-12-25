@@ -21,6 +21,7 @@ ro.surface_flinger.supports_background_blur=1
 ro.vendor.radio.features_common=2
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
+ro.telephony.sim.count=2
 
 # SLA
 ro.vendor.net.enable_sla=1
