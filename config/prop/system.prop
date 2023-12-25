@@ -165,3 +165,6 @@ dalvik.vm.dex2oat64.enabled=true
 # Camera
 persist.camera.dualcal.state=-1
 ro.mtk_cam_stereo_camera_support=1
+
+# Brand
+Build.BRAND=MTK
