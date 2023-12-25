@@ -146,3 +146,9 @@ ro.mot.eri.losalert.delay=1000
 
 # Logging
 persist.sys.mdlog_dumpback=2
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+ro.iorapd.enable=false
