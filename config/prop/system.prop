@@ -168,3 +168,6 @@ ro.mtk_cam_stereo_camera_support=1
 
 # Brand
 Build.BRAND=MTK
+
+# Tee
+ro.mtk_key_manager_support
