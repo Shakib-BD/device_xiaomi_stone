@@ -152,3 +152,6 @@ ro.kernel.zio=38,108,105,16
 sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 ro.iorapd.enable=false
+
+# GPU
+ro.opengles.version=196610
