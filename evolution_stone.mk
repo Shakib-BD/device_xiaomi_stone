@@ -11,14 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvoX stuff
+$(call inherit-product, vendor/evolution/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-## Device identifier. This must come after all inclusions
-WITH_GMS := true
+EVO_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_USES_PICO_GAPPS := true
+
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := aosp_stone
+PRODUCT_NAME := evolution_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
