@@ -11,14 +11,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Cherish stuff
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some props from Cherish
+CHERISH_VANILLA := true
+CHERISH_BUILD_TYPE := UNOFFICIAL
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Shakib
+
+# Inherit some common device props
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 WITH_GMS := true
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := aosp_stone
+PRODUCT_NAME := cherish_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
