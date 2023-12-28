@@ -12,14 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
 # Inherit some common EvoX stuff
-$(call inherit-product, vendor/evolution/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-EVO_BUILD_TYPE := UNOFFICIAL
+# EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_USES_PICO_GAPPS := true
+# TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
