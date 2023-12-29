@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_stone.mk 
+    $(LOCAL_DIR)/evolution_stone.mk 
     
 COMMON_LUNCH_CHOICES := \
-    rising_stone-user \
-    rising_stone-userdebug \
-    rising_stone-eng 
+    evolution_stone-user \
+    evolution_stone-userdebug \
+    evolution_stone-eng 
