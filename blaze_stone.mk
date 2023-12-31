@@ -11,19 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common EvoX stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common Project-Blaze stuff
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
-# EVO_BUILD_TYPE := UNOFFICIAL
+# Blaze Stuff
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := Shakib (@Shakib_BD)
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BUILD_APERTURE_CAMERA := true
-# TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := evolution_stone
+PRODUCT_NAME := blaze_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi

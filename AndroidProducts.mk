@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The evolutionOS Project
+# Copyright (C) 2020 The blazeOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_stone.mk
+    $(LOCAL_DIR)/blaze_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_stone-user \
-    evolution_stone-userdebug \
-    evolution_stone-eng
+    blaze_stone-user \
+    blaze_stone-userdebug \
+    blaze_stone-eng
