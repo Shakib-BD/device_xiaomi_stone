@@ -11,14 +11,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common KomodoOS stuff
+$(call inherit-product, vendor/komodo/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_FACE_UNLOCK := true
+IS_PHONE := true
+
+# Komodo Stuff
+KOMODO_OFFICIAL := false
+KOMODO_GAPPS_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 
 ## Device identifier. This must come after all inclusions
 WITH_GMS := true
 PRODUCT_DEVICE := stone
-PRODUCT_NAME := aosp_stone
+PRODUCT_NAME := komodo_stone
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi
