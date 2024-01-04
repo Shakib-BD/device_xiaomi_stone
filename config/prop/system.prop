@@ -37,6 +37,7 @@ ro.surface_flinger.set_touch_timer_ms=3000
 ro.surface_flinger.set_idle_timer_ms=3000
 ro.surface_flinger.set_display_power_timer_ms=1200
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
+debug.sf.enable_gl_backpressure=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=27600000
 debug.sf.late.app.duration=20000000
@@ -44,7 +45,7 @@ debug.sf.early.sf.duration=27600000
 debug.sf.early.app.duration=20000000
 debug.sf.earlyGl.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
-debug.sf.hwc.min.duration=23000000
+debug.sf.hwc.min.duration=17000000
 debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
@@ -120,3 +121,108 @@ persist.vendor.sensor.cali_sensor=111001100000000
 
 # gralloc4 log
 persist.log.tag.gralloc4=S
+persist.log.tag.gralloc4=S
+
+# Fling
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+ro.max.fling_velocity=20000
+
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+ro.lmk.stall_limit_critical=40
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=false
+
+# SkiaGL Threaded
+debug.renderengine.backend=skiaglthreaded
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true
+
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=1000
+
+# Logging
+persist.sys.mdlog_dumpback=2
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+ro.iorapd.enable=false
+
+# GPU
+ro.opengles.version=196610
+
+# FS-verity
+ro.apk_verity.mode=2
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Camera
+persist.camera.dualcal.state=-1
+ro.mtk_cam_stereo_camera_support=1
+
+# Brand
+Build.BRAND=MTK
+
+# Tee
+ro.mtk_key_manager_support
+
+# Extra props by Shakib
+persist.sys.radio.force_lte_ca=true
+ro.vendor.tran_age_flag=849
+persist.vendor.anr.dumpthr=1
+persist.vendor.mtk.aee.filter=0
+persist.vendor.exception.filesize=200
+persist.vendor.pms_removable=1
+persist.vendor.wfc.sys_wfc_support=1
+persist.vendor.vzw_device_type=0
+ro.vendor.customer_logpath=/data
+ro.vendor.have_aee_feature=1
+persist.vendor.mdlog.flush_log_ratio=0
+vendor.mtk_thumbnail_optimization=true
+ro.audio.usb.period_us=16000
+vendor.af.threshold.src_and_effect_count=5
+persist.sys.fuse.passthrough.enable=true
+debug.sf.disable_client_composition_cache=1
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.protected_contents=true
+ro.vendor.composer_version=2.1
+vendor.debug.sf.cpupolicy.base_min_bl=310
+vendor.debug.sf.cpupolicy.hw_comp_suspend=1
+vendor.debug.sf.cpupolicy.hw_hfr_suspend=1
+vendor.debug.sf.cpupolicy.lowbound_uclamp_min=165
+vendor.debug.sf.cpupolicy.max_correct_offset=150
+vendor.debug.sf.cpupolicy.min_120=165
+vendor.debug.sf.cpupolicy.min_30_mml=165
+vendor.debug.sf.cpupolicy.min_60=130
+vendor.debug.sf.cpupolicy.min_60_mml=165
+vendor.debug.sf.cpupolicy.min_90=165
+vendor.debug.sf.cpupolicy.min_boost=165
+vendor.debug.sf.cpupolicy.power_down_120=300000
+vendor.debug.sf.cpupolicy.power_up_120=-300000
+vendor.debug.sf.cpupolicy.re_hfr=0
+vendor.debug.sf.cpupolicy.rt_bl_min=300
+vendor.debug.sf.cpupolicy.sf_cpu_thres=290
+vendor.debug.sf.cpupolicy.upbound_uclamp_max_ll=262
+vendor.debug.sf.cpupolicy.upbound_uclamp_min=350
+vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=210
+vendor.debug.sf.cpupolicy.xgf_min=25
+ro.vendor.mtk_power_off_alarm_test=1
+persist.vendor.powerhal.kswapd0_bind_enable=-1
+ro.vendor.tran.xml.support=1
+persist.vendor.radio.msimmode=tsts
+ro.vendor.radio.max.multisim=tsts
+persist.vendor.radio.tsd.multisimmode=2
+ro.vendor.tran.ecc_remake_support=0
+
