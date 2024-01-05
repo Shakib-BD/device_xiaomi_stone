@@ -13,11 +13,14 @@
 -->
 <resources>
 
+    <!-- the padding on the height  of the statusbar -->
+    <dimen name="status_bar_padding_top">16dp</dimen>
+
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">18dp</dimen>
+    <dimen name="status_bar_padding_start">27dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">6dp</dimen>
+    <dimen name="status_bar_padding_end">14dp</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">25dp</dimen>
