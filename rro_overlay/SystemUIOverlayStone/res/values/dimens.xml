@@ -14,16 +14,13 @@
 <resources>
 
     <!-- the padding on the height  of the statusbar -->
-    <dimen name="status_bar_padding_top">16dp</dimen>
+    <dimen name="status_bar_padding_top">13dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">27dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
     <dimen name="status_bar_padding_end">14dp</dimen>
-
-    <!-- Margin on the left side of the carrier text on Keyguard -->
-    <dimen name="keyguard_carrier_text_margin">25dp</dimen>
 
    <!-- Location on the screen of the center of the fingerprint sensor. For devices with under
      display fingerprint sensors, this directly corresponds to the fingerprint sensor's location.
