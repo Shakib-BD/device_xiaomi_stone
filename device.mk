@@ -193,6 +193,10 @@ include $(LOCAL_PATH)/config/prop/default.mk
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Prebuilt GcamGO
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3_8
+
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \
